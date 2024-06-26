@@ -40,7 +40,6 @@ def get_all():
 def get_one(id):
 
     member = jackson_family.get_member(id) 
-    print(type(member))
     response_body = {
         'message': 'Member added successfully',
         'member': member

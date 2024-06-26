@@ -48,9 +48,13 @@ class FamilyStructure:
     def add_member(self, member):
         ## Debes implementar este método
         ## Agrega un nuevo miembro a la lista de _members
-        # member["id"] = self._generate_id()
+        
+        if "id" not in member:
+            member["id"] = self._generate_id()
+        
         self._members.append(member)
         return self._members
+
 
     def delete_member(self, id):
         ## Debes implementar este método
